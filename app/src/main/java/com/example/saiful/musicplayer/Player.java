@@ -51,7 +51,7 @@ public class Player extends AppCompatActivity implements View.OnClickListener {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if ((event.getAction() == event.ACTION_DOWN) && (keyCode == event.KEYCODE_ENTER)) {
-                    Toast.makeText(getApplicationContext(),"hi man",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"it's demo talk",Toast.LENGTH_SHORT).show();
                 }
                 return false;
             }
