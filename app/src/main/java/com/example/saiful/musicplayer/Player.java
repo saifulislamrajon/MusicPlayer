@@ -5,11 +5,13 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -45,6 +47,15 @@ public class Player extends AppCompatActivity implements View.OnClickListener {
 
         show = (TextView) findViewById(R.id.show);
         editText = (EditText) findViewById(R.id.editText);
+        editText.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if ((event.getAction() == event.ACTION_DOWN) && (keyCode == event.KEYCODE_ENTER)) {
+                    Toast.makeText(getApplicationContext(),"hi man",Toast.LENGTH_SHORT).show();
+                }
+                return false;
+            }
+        });
         seekBar = (SeekBar) findViewById(R.id.seekBar);
         updateSeekBar = new Thread() {
             @Override
