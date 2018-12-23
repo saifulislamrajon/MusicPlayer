@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.9"
+    android:background="#009688"
+    android:elevation="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:text="Music Player"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+   <!-- <ImageButton
+        android:id="@+id/mButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp" />-->
+
+</android.support.v7.widget.Toolbar>
